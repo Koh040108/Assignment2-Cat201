@@ -1,4 +1,4 @@
-import Home from './pages/Home';
+import TouristSpots from './pages/TouristSpots';
 import Header from './components/Header';
 import Footer from './components/Footer';
 // Add other imports here
@@ -8,7 +8,7 @@ function App() {
       <div>
         <Header />
         <main>
-          <Home />
+          <TouristSpots />
           {/* Add other components */}
         </main>
         <Footer />
