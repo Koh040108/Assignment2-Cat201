@@ -1,0 +1,28 @@
+.nature-detail {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e8f5e9;
+}
+
+.nature-detail img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nature-detail h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.nature-detail p {
+    color: #4e4e4e;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}

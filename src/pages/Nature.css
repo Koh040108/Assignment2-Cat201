@@ -1,0 +1,52 @@
+/* General section styles */
+#nature {
+    padding: 2rem;
+    background-color: #e8f5e9; /* Light green for a nature theme */
+    text-align: center;
+}
+
+#nature h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Gallery grid layout */
+.nature-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+/* Individual nature items */
+.nature-item {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.nature-item:hover {
+    transform: translateY(-10px);
+}
+
+.nature-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nature-item h3 {
+    margin: 1rem 0 0.5rem;
+    color: #1b5e20;
+    font-size: 1.5rem;
+}
+
+.nature-item p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #4e4e4e;
+}
