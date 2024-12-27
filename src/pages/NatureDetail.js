@@ -1,39 +1,33 @@
-import React from 'react';
-import { useParams } from 'react-router-dom'; // Hook for accessing route parameters
-import './NatureDetail.css'; // Optional styling for this component
-
-// Define the details for each location
-const locationDetails = {
-    "penang-hill": {
-        title: "Penang Hill",
-        description: "Penang Hill offers breathtaking views, lush greenery, and a serene escape from the bustling city. It’s a perfect spot for nature lovers and adventurers.",
-        image: "/penang-hill.jpg"
-    },
-    "escape-waterpark": {
-        title: "Escape Waterpark",
-        description: "Escape Waterpark is a fun-filled adventure park featuring thrilling water slides, obstacle courses, and outdoor activities for all ages.",
-        image: "/escape-waterpark.jpg"
-    },
-    "entopia": {
-        title: "Entopia",
-        description: "Entopia is a haven for nature enthusiasts, offering interactive exhibits and a lush sanctuary home to hundreds of butterflies and other insects.",
-        image: "/entopia.jpg"
-    }
-};
+import React from "react";
+import { useParams } from "react-router-dom";
+import natureData from "../pages/natureData";
+import "./NatureDetail.css";
 
 const NatureDetail = () => {
-    const { locationId } = useParams(); // Access the dynamic route parameter
-    const location = locationDetails[locationId]; // Get the details for the selected location
+    const { locationId } = useParams(); // Get locationId from the route
+    const location = natureData.find((loc) => loc.id === locationId); // Find the correct location data
 
     if (!location) {
-        return <p>Location not found. Please go back and try again.</p>;
+        return <p>Location not found. Please select a valid destination.</p>;
     }
 
     return (
         <div className="nature-detail">
             <h2>{location.title}</h2>
             <img src={location.image} alt={location.title} />
-            <p>{location.description}</p>
+            <div className="description">
+                <p>
+                    <strong>Location:</strong> {location.location} <br />
+                    <strong>Elevation:</strong> {location.elevation || "Not Available"} <br />
+                    <strong>Coordinates:</strong> {location.coordinates || "Not Available"} <br />
+                    <strong>Established:</strong> {location.established || "Not Available"}
+                </p>
+                <div dangerouslySetInnerHTML={{ __html: location.description }} />
+            </div>
+            <div className="full-description">
+                <h3>Highlights and Attractions</h3>
+                <div dangerouslySetInnerHTML={{ __html: location.fullDescription }} />
+            </div>
         </div>
     );
 };

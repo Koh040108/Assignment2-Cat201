@@ -6,6 +6,7 @@ import NatureDetail from './pages/NatureDetail';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+
 function App() {
     return (
         <Router>
@@ -16,10 +17,11 @@ function App() {
                 {/* Main content area */}
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home />} /> {/* Route for Home */}
-                        <Route path="/nature" element={<Nature />} /> {/* Route for Nature and Adventure */}
-                        <Route path="/nature/:locationId" element={<NatureDetail />} /> {/* Dynamic route for details */}
+                        <Route path="/" element={<Home />} />
+                        <Route path="/nature" element={<Nature />} />
+                        <Route path="/nature/:locationId" element={<NatureDetail />} /> {/* Dynamic route */}
                     </Routes>
+
                 </main>
 
                 {/* Footer component */}
