@@ -13,12 +13,6 @@ function App() {
                 {/* Header component */}
                 <Header />
 
-                {/* Navigation bar for easy navigation */}
-                <nav style={{ backgroundColor: '#FFC107', padding: '10px' }}>
-                    <a href="/" style={{ margin: '0 15px', textDecoration: 'none', color: '#000' }}>Home</a>
-                    <a href="/nature" style={{ margin: '0 15px', textDecoration: 'none', color: '#000' }}>Nature and Adventure</a>
-                </nav>
-
                 {/* Main content area */}
                 <main>
                     <Routes>
