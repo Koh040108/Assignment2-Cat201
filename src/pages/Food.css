@@ -1,0 +1,71 @@
+/* Styling for the Food Section */
+#food {
+    padding: 3rem 1rem; /* Adjust padding for better spacing */
+    background-color: #fdf6e3; /* Softer background color */
+}
+
+
+#food h2 {
+    text-align: center;
+    font-size: 2.5rem; /* Larger font for emphasis */
+    margin-bottom: 2rem;
+    color: #ff6f00; /* Use a standout color */
+    font-family: 'Poppins', sans-serif; /* A modern font */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.food-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased gap for better spacing */
+    justify-content: center;
+}
+
+.food-item {
+    width: 280px;
+    border: none; /* Remove the solid border */
+    border-radius: 12px; /* Softer border-radius */
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #f3f3f3); /* Gradient background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.food-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.food-item img {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Fixed consistent height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio and covers the container */
+    border-bottom: 2px solid #ff6f00; /* Subtle highlight */
+}
+
+.food-item h3 {
+    font-size: 1.5rem; /* Slightly larger font size */
+    color: #333;
+    margin: 1rem 0 0.5rem;
+    font-family: 'Poppins', sans-serif; /* Matching font */
+}
+
+.food-item p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 1rem 1.5rem;
+    font-family: 'Roboto', sans-serif; /* Modern readable font */
+}
+
+@media screen and (max-width: 768px) {
+    .food-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food-item {
+        width: 90%; /* Make items responsive on smaller screens */
+    }
+}

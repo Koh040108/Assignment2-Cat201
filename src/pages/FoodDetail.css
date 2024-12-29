@@ -1,0 +1,22 @@
+.food-detail {
+    padding: 2rem;
+    text-align: center;
+}
+
+.food-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.food-detail .description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.food-detail .full-description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+}

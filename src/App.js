@@ -5,7 +5,8 @@ import Nature from './pages/Nature';
 import NatureDetail from './pages/NatureDetail';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import Food from './pages/Food';
+import FoodDetail from "./pages/FoodDetail";
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/nature" element={<Nature />} />
                         <Route path="/nature/:locationId" element={<NatureDetail />} /> {/* Dynamic route */}
+                        <Route path="/food" element={<Food />} />
+                        <Route path="/food/:foodId" element={<FoodDetail />} />
                     </Routes>
 
                 </main>
