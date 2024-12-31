@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Nature from './pages/Nature';
-import NatureDetail from './pages/NatureDetail';
+import Home from './pages/Home'; // Ensure this is the correct Home component path
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Food from './pages/Food';
 import FoodDetail from "./pages/FoodDetail";
+import TouristSpots from "./pages/TouristSpots";
+import Culture from "./pages/Culture";
+// Add other imports here as needed
 
 function App() {
     return (
@@ -31,6 +31,19 @@ function App() {
                 <Footer />
             </div>
         </Router>
+    );
+    return (
+        <div>
+            <Header />
+            <main>
+                {/* Main sections of the site */}
+                <Home />
+                <TouristSpots />
+                <Culture />
+                {/* Add other components or pages here */}
+            </main>
+            <Footer />
+        </div>
     );
 }
 
