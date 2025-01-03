@@ -1,0 +1,33 @@
+.privacy-policy-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.privacy-policy-container header {
+    background-color: #0066cc;
+}
+
+.privacy-policy-container h1, .privacy-policy-container h2 {
+    color: black;
+}
+
+.privacy-policy-container p, .privacy-policy-container ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.privacy-policy-container footer {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.privacy-policy-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.privacy-policy-container ul li {
+    margin: 10px 0;
+}

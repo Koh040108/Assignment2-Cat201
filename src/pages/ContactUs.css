@@ -1,0 +1,15 @@
+.contact-us-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+#map {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #343a40;
+}

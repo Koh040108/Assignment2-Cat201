@@ -1,49 +1,49 @@
-import React from 'react';
-import Home from './pages/Home'; // Ensure this is the correct Home component path
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Food from './pages/Food';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"; // Ensure this path is correct
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Food from "./pages/Food";
 import FoodDetail from "./pages/FoodDetail";
-import TouristSpots from "./pages/TouristSpots";
+import Nature from "./pages/Nature";
+import NatureDetail from "./pages/NatureDetail";
 import Culture from "./pages/Culture";
-// Add other imports here as needed
+import TouristSpots from "./pages/TouristSpots";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+
 
 function App() {
     return (
         <Router>
-            <div>
-                {/* Header component */}
+            <div className="min-h-screen flex flex-col">
+                {/* Header */}
                 <Header />
 
-                {/* Main content area */}
-                <main>
+                {/* Main Content */}
+                <main className="flex-grow">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/nature" element={<Nature />} />
-                        <Route path="/nature/:locationId" element={<NatureDetail />} /> {/* Dynamic route */}
+                        <Route path="/nature/:locationId" element={<NatureDetail />} />
                         <Route path="/food" element={<Food />} />
                         <Route path="/food/:foodId" element={<FoodDetail />} />
+                        <Route path="/culture" element={<Culture />} />
+                        <Route path="/tourist-spots" element={<TouristSpots />} />
+                        <Route path="/about-us" element={<AboutUs />} />
+                        <Route path="/contact-us" element={<ContactUs />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                        <Route path="/terms-of-service" element={<TermsOfService />} />
+                        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
                     </Routes>
-
                 </main>
 
-                {/* Footer component */}
+                {/* Footer */}
                 <Footer />
             </div>
         </Router>
-    );
-    return (
-        <div>
-            <Header />
-            <main>
-                {/* Main sections of the site */}
-                <Home />
-                <TouristSpots />
-                <Culture />
-                {/* Add other components or pages here */}
-            </main>
-            <Footer />
-        </div>
     );
 }
 

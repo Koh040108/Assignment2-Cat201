@@ -36,3 +36,9 @@
 .nav ul li a:hover {
     color: #007bff;
 }
+
+.nav-link.active {
+    color: #007bff; /* Bootstrap default */
+    font-weight: bold; /* Optional */
+}
+

@@ -1,0 +1,12 @@
+.about-us-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+}
