@@ -1,0 +1,75 @@
+/* Container styling for the CultureDetail component */
+.culture-detail {
+    font-family: 'Arial', sans-serif; /* Clean and simple font */
+    color: #333; /* Dark text color for readability */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restrict container width */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Title styling */
+.culture-detail h2 {
+    font-size: 2rem; /* Larger font for titles */
+    color: #8b4513; /* Culture-inspired brown */
+    margin-bottom: 20px;
+    text-align: center; /* Centered title */
+}
+
+/* Image styling */
+.culture-detail img {
+    display: block;
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded image corners */
+    margin: 20px auto; /* Center the image */
+    border: 1px solid #ccc; /* Subtle border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add some depth */
+}
+
+/* Description section styling */
+.description {
+    font-size: 1.2rem; /* Larger font size for readability */
+    line-height: 1.6; /* Spacing between lines */
+    margin-bottom: 20px;
+}
+
+/* Full description styling */
+.full-description h3 {
+    font-size: 1.5rem; /* Slightly larger heading */
+    color: #0056b3; /* Blue color for highlights */
+    margin-bottom: 15px;
+}
+
+.full-description p {
+    font-size: 1rem; /* Normal text size */
+    line-height: 1.6; /* Spacing between lines */
+    margin-bottom: 10px;
+    text-align: justify; /* Justify text for neat alignment */
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .culture-detail {
+        padding: 15px;
+    }
+
+    .culture-detail h2 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .full-description h3 {
+        font-size: 1.3rem;
+    }
+
+    .full-description p {
+        font-size: 0.9rem;
+    }
+}

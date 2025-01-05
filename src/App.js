@@ -1,24 +1,26 @@
 import React from 'react';
-import Home from './pages/Home'; // Ensure this is the correct Home component path
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import TouristSpots from "./pages/TouristSpots";
-import Culture from "./pages/Culture";
-// Add other imports here as needed
+import Culture from './pages/Culture';
+import CultureDetail from './pages/CultureDetail';
 
 function App() {
     return (
-        <div>
-            <Header />
-            <main>
-                {/* Main sections of the site */}
-                <Home />
-                <TouristSpots />
-                <Culture />
-                {/* Add other components or pages here */}
-            </main>
-            <Footer />
-        </div>
+        <Router>
+            <div>
+                <Header />
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/culture" element={<Culture />} />
+                        <Route path="/culture/:cultureId" element={<CultureDetail />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
     );
 }
 

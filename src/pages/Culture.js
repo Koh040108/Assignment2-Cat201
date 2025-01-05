@@ -1,26 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // For linking to culture detail pages
 import './Culture.css'; // Importing the CSS file for this component
+import cultureData from '../pages/CultureData'; // Import the culture data
 
 const Culture = () => {
     return (
         <section id="culture">
             <h2>Cultural Heritage of Penang</h2>
             <div className="culture-gallery">
-                <div className="culture-item">
-                    <img src="/temple.jpg" alt="Penang Temple" />
-                    <h3>Penang Temple</h3>
-                    <p>A beautiful and historic temple that reflects Penang's rich heritage.</p>
-                </div>
-                <div className="culture-item">
-                    <img src="/streetart.jpeg" alt="Penang Street Art" />
-                    <h3>Penang Street Art</h3>
-                    <p>Famous for its vibrant street art that blends tradition and modernity.</p>
-                </div>
-                <div className="culture-item">
-                    <img src="/gtw.jpeg" alt="George Town" />
-                    <h3>George Town</h3>
-                    <p>A UNESCO World Heritage Site known for its cultural diversity and history.</p>
-                </div>
+                {cultureData.map((culture) => (
+                    <div className="culture-item" key={culture.id}>
+                        <img src={culture.image} alt={culture.title} />
+                        <h3>{culture.title}</h3>
+                        <p>{culture.description}</p>
+                        <Link to={`/culture/${culture.id}`} className="btn">
+                            Learn More
+                        </Link>
+                    </div>
+                ))}
             </div>
         </section>
     );
