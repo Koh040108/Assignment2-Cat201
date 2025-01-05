@@ -96,7 +96,7 @@ const Home = () => {
                     <div className="row g-4">
                         {/* Card 1 */}
                         <Card
-                            imageSrc="./image1.png"
+                            imageSrc=""
                             title="Penang Temple"
                             text="A beautiful and historic temple that reflects Penang's rich heritage."
                             link="/food"
@@ -105,7 +105,7 @@ const Home = () => {
 
                         {/* Card 2 */}
                         <Card
-                            imageSrc="./image2.png"
+                            imageSrc=""
                             title="Penang Hill"
                             text="Enjoy panoramic views of the island from Penang Hill."
                             link="/nature/penang-hill"
@@ -114,7 +114,7 @@ const Home = () => {
 
                         {/* Card 3 */}
                         <Card
-                            imageSrc="./image3.png"
+                            imageSrc=""
                             title="Penang Beaches"
                             text="Relax and unwind on the beautiful beaches of Penang."
                             link="/nature/beaches"
