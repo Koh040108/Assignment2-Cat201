@@ -32,10 +32,10 @@ function App() {
                         <Route path="/food/:foodId" element={<FoodDetail />} />
                         <Route path="/culture" element={<Culture />} />
                         <Route path="/tourist-spots" element={<TouristSpots />} />
-                        <Route path="/about-us" element={<AboutUs />} />
-                        <Route path="/contact-us" element={<ContactUs />} />
-                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                        <Route path="/terms-of-service" element={<TermsOfService />} />
+                        <Route path="/AboutUs" element={<AboutUs />} />
+                        <Route path="/ContactUs" element={<ContactUs />} />
+                        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+                        <Route path="/TermsOfService" element={<TermsOfService />} />
                         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
                     </Routes>
                 </main>

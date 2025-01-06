@@ -19,10 +19,10 @@ const Footer = () => {
                     <div className="col-md-4">
                         <h5>Quick Links</h5>
                         <ul className="list-unstyled">
-                            <li><a href="/about-us" className="text-white text-decoration-none">About Us</a></li>
-                            <li><a href="/contact-us" className="text-white text-decoration-none">Contact</a></li>
-                            <li><a href="/privacy-policy" className="text-white text-decoration-none">Privacy Policy</a></li>
-                            <li><a href="/terms-of-service" className="text-white text-decoration-none">Terms of Service</a></li>
+                            <li><a href="/AboutUs" className="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/ContactUs" className="text-white text-decoration-none">Contact</a></li>
+                            <li><a href="/PrivacyPolicy" className="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/TermsOfService" className="text-white text-decoration-none">Terms of Service</a></li>
                         </ul>
                     </div>
 
