@@ -25,7 +25,7 @@ const ContactUs = () => {
 
     return (
         <div className="contact-us-container">
-            <header className="text-center py-5 bg-primary text-white">
+            <header className="text-center py-5 bg-black text-white">
                 <h1>Contact Us</h1>
                 <p>We would love to hear from you! Please reach out to us with any inquiries.</p>
             </header>

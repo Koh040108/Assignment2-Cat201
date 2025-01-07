@@ -3,9 +3,9 @@ import React from 'react';
 const TermsOfService = () => {
     return (
         <div className="terms-of-service-container">
-            <header className="text-center py-5 bg-primary text-white">
+            <header className="text-center py-5 bg-black text-white">
                 <h1>Terms of Service</h1>
-                <p>Last Updated: [Date]</p>
+                <p>Last Updated: 1/1/2025</p>
             </header>
 
             <section className="container my-5">

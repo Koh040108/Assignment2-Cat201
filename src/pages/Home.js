@@ -120,7 +120,7 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center">
-                                <h1 className="welcome-text"> Welcome To Visit Peneng</h1>
+                                <h1 className="welcome-text"> Welcome To Peneng</h1>
                             </div>
                         </div>
                     </div>
