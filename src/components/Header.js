@@ -18,16 +18,16 @@ const Header = () => {
                 <nav>
                     <ul className="nav nav-tabs">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Home</a>
+                            <a className="nav-link active" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Cultural and Heritage</a>
+                            <a className="nav-link" href="/culture">Cultural and Heritage</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Nature and Adventure</a>
+                            <a className="nav-link" href="/nature">Nature and Adventure</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Food and Lifestyle</a>
+                            <a className="nav-link" href="/food">Food and Lifestyle</a>
                         </li>
                     </ul>
                 </nav>

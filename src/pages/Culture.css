@@ -1,15 +1,38 @@
-/* Culture.css */
-
 /* Section styling */
 #culture {
+    position: relative;
     padding: 2rem;
-    background-color: #f9f9f9;
+    text-align: center; /* Center-align the text */
+    color: #ffffff; /* Text color */
+    overflow: hidden; /* Ensure content stays within the section */
 }
 
+#culture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/culture_background.jpeg'); /* Corrected background path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    filter: blur(8px); /* Apply blur effect */
+    opacity: 0.6; /* Make the background slightly transparent */
+    z-index: -1; /* Place it behind the content */
+}
+
+#culture > * {
+    position: relative;
+    z-index: 1; /* Ensure the content stays on top of the blurred background */
+}
+
+/* Title styling with pink text and black outline */
 #culture h2 {
-    text-align: center;
-    color: #333;
     font-size: 2rem;
+    color: pink; /* Text color */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Black outline */
     margin-bottom: 1.5rem;
 }
 
@@ -33,13 +56,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
 .culture-item:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Image styling */
 .culture-item img {
     width: 100%;
     height: auto;
@@ -47,42 +68,34 @@
     margin-bottom: 10px;
 }
 
-/* Title and description styling */
+/* Culture item titles with pink text and black outline */
 .culture-item h3 {
     font-size: 1.2rem;
-    color: #444;
+    color: pink; /* Text color */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Black outline */
     margin-bottom: 8px;
 }
 
+/* Culture item descriptions */
 .culture-item p {
     font-size: 1rem;
     color: #666;
     margin: 0 10px 10px 10px;
 }
 
-
-/* Hover effect on culture items */
-.culture-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Image styling */
-.culture-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* Title and description styling */
-.culture-item h3 {
-    font-size: 1.2rem;
-    color: #444;
-    margin-bottom: 8px;
-}
-
-.culture-item p {
+/* Learn More Button */
+.culture-item .btn {
+    display: inline-block;
+    background-color: pink; /* Pink background color */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
     font-size: 1rem;
-    color: #666;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.culture-item .btn:hover {
+    background-color: #ff69b4; /* A darker pink for hover */
 }

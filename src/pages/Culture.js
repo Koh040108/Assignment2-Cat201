@@ -1,9 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // For linking to culture detail pages
+import { Link } from 'react-router-dom';
 import './Culture.css'; // Importing the CSS file for this component
 import cultureData from '../pages/CultureData'; // Import the culture data
 
 const Culture = () => {
+    // Check if cultureData is an array before mapping over it
+    if (!Array.isArray(cultureData)) {
+        return <p>Failed to load culture data.</p>;
+    }
+
     return (
         <section id="culture">
             <h2>Cultural Heritage of Penang</h2>
@@ -24,3 +29,4 @@ const Culture = () => {
 };
 
 export default Culture;
+
