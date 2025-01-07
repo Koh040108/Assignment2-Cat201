@@ -8,6 +8,7 @@ const natureData = [
         coordinates: "5.4203° N, 100.2760° E",
         established: "British colonial era",
         additionalVideo: "/The Habitat Penang Hill.mp4", // New field for a video
+        siteLink: "https://www.penanghill.gov.my/index.php/en/",
         googleMapsLink: "https://www.google.com/maps/place/Penang+Hill/@5.4084612,100.2773317,15z/data=!3m1!4b1!4m6!3m5!1s0x304ac28738d4ea43:0xf862c72e1eb12bb9!8m2!3d5.4084613!4d100.2773317!16zL20vMDYwcnhk?entry=ttu",
         description: `
       Penang Hill, locally known as Bukit Bendera, is a prominent hill resort and tourist destination \n
@@ -41,6 +42,7 @@ const natureData = [
         coordinates: "5.4522° N, 100.2156° E",
         established: "1986",
         additionalVideo: "/ENTOPIA by Penang.mp4", // New field for a video
+        siteLink: "https://www.entopia.com/",
         googleMapsLink: "https://www.google.com/maps/place/Entopia+by+Penang+Butterfly+Farm/@5.4476268,100.2124194,17z/data=!3m1!4b1!4m6!3m5!1s0x304ae858a51c78f3:0x78cc63e455e38b1f!8m2!3d5.4476215!4d100.2149943!16s%2Fg%2F1vb_r84m?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D",
         description: `
       Entopia is a world-class nature learning destination that combines a beautifully landscaped indoor \n
@@ -67,6 +69,7 @@ const natureData = [
         coordinates: "5.4351° N, 100.2094° E",
         established: "2012",
         additionalVideo: "/ESCAPE Official Video 2018.mp4", // New field for a video
+        siteLink: "https://www.escape.my/",
         googleMapsLink: "https://www.google.com/maps/place/ESCAPE+Penang/@5.4497458,100.2114631,17z/data=!3m1!4b1!4m6!3m5!1s0x304ac3a45d25df75:0xe55b46784fbcb260!8m2!3d5.4497405!4d100.214038!16s%2Fg%2F1w3sx3lr?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D",
         description: `
       Escape Waterpark, often referred to as just Escape, is an award-winning adventure and waterpark \n

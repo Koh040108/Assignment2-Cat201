@@ -13,6 +13,7 @@ const NatureDetail = () => {
 
     return (
         <div className="nature-detail">
+            <h2>{location.title}</h2>
             <div className="media-container">
                 {/* Example video (conditionally rendered if video URL exists) */}
                 {location.additionalVideo && (
@@ -22,8 +23,6 @@ const NatureDetail = () => {
                     </video>
                 )}
             </div>
-            <h2>{location.title}</h2>
-            <img src={location.image} alt={location.title}/>
             <div className="description">
                 <p>
                     <strong>Location:</strong> {location.location} <br/>
@@ -33,20 +32,18 @@ const NatureDetail = () => {
                 </p>
                 <div dangerouslySetInnerHTML={{__html: location.description}}/>
             </div>
+            <img src={location.image} alt={location.title}/>
 
             <div className="full-description">
                 <h3>Highlights and Attractions</h3>
                 <div dangerouslySetInnerHTML={{__html: location.fullDescription}}/>
             </div>
             {/* Button for direct link to Google Maps */}
-            <a
-                className="location-button"
-                href={location.googleMapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View on Google Maps
-            </a>
+            <div className="button-container">
+                <a href={location.googleMapsLink} className="location-button">View on Google Maps</a>
+                <a href={location.siteLink} className="location-button">View Official Website</a>
+            </div>
+
         </div>
     );
 };
