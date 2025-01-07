@@ -7,51 +7,83 @@ import './Home.css'; // Import custom styles for Home component
 
 const Home = () => {
     return (
-        <div className="home-container"
-             style={{backgroundColor: "#FBF6D9"}}>
+        <div
+            className="home-container"
+            style={{ backgroundColor: "#FBF6D9" }}
+        >
             <div className="content">
                 {/* Full-Screen Carousel */}
-                <div id="carouselExampleCaptions" className="carousel slide vh-100" data-bs-ride="carousel">
-                    <div className="carousel-inner h-100">
+                <div
+                    id="carouselExampleCaptions"
+                    className="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div className="carousel-inner">
                         {/* Indicators */}
-                        <ol className="carousel-indicators">
-                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"></li>
-                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-                        </ol>
+                        <div className="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="0"
+                                className="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
 
                         {/* Carousel Items */}
-                        <div className="carousel-item active h-100">
+                        <div className="carousel-item active">
                             <img
-                                src='./corousel1.png'
-                                className="d-block w-100 h-100 object-fit-cover"
+                                src="./corousel1.png"
+                                className="d-block w-100"
                                 alt="Penang View"
+                                style={{maxHeight: "80vh", objectFit: "cover"}}
                             />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5 className="text-white text-lg">Discover the Beauty of Penang</h5>
-                                <p className="text-light">From stunning beaches to rich culture, Penang has it all.</p>
+                            <div className="carousel-caption d-md-block">
+                                <h5>Discover the Beauty of Penang</h5>
+                                <p>
+                                    From stunning beaches to rich culture, Penang has it all.
+                                </p>
                             </div>
                         </div>
-                        <div className="carousel-item h-100">
+                        <div className="carousel-item">
                             <img
-                                src='./corousel2.png'
-                                className="d-block w-100 h-100 object-fit-cover"
+                                src="./corousel2.png"
+                                className="d-block w-100"
                                 alt="Penang Food"
+                                style={{maxHeight: "80vh", objectFit: "cover"}}
                             />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5 className="text-white text-lg">Penang Street Food</h5>
-                                <p className="text-light">Indulge in the famous street food culture of Penang.</p>
+                            <div className="carousel-caption d-md-block">
+                                <h5>Penang Street Food</h5>
+                                <p>
+                                    Indulge in the famous street food culture of Penang.
+                                </p>
                             </div>
                         </div>
-                        <div className="carousel-item h-100">
+                        <div className="carousel-item">
                             <img
-                                src='./corousel3.png'
-                                className="d-block w-100 h-100 object-fit-cover"
+                                src="./corousel3.png"
+                                className="d-block w-100"
                                 alt="Penang Hill"
+                                style={{maxHeight: "80vh", objectFit: "cover"}}
                             />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5 className="text-white text-lg">Explore Penang Hill</h5>
-                                <p className="text-light">Take in the breathtaking views from Penang Hill.</p>
+                            <div className="carousel-caption d-md-block">
+                                <h5>Explore Penang Hill</h5>
+                                <p>
+                                    Take in the breathtaking views from Penang Hill.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +95,10 @@ const Home = () => {
                         data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="prev"
                     >
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
                         <span className="visually-hidden">Previous</span>
                     </button>
                     <button
@@ -72,7 +107,10 @@ const Home = () => {
                         data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="next"
                     >
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -96,28 +134,28 @@ const Home = () => {
                     <div className="row g-4">
                         {/* Card 1 */}
                         <Card
-                            imageSrc=""
+                            imageSrc="/temple.jpg"
                             title="Penang Temple"
                             text="A beautiful and historic temple that reflects Penang's rich heritage."
-                            link="/food"
+                            link="/culture/1"
                             buttonColor="#F660AB"
                         />
 
                         {/* Card 2 */}
                         <Card
-                            imageSrc=""
-                            title="Penang Hill"
-                            text="Enjoy panoramic views of the island from Penang Hill."
-                            link="/nature/penang-hill"
+                            imageSrc="/streetart.jpeg"
+                            title="Penang Street Art"
+                            text="Famous for its vibrant street art that blends tradition and modernity, telling stories of Penang's culture."
+                            link="/culture/2"
                             buttonColor="#F660AB"
                         />
 
                         {/* Card 3 */}
                         <Card
-                            imageSrc=""
-                            title="Penang Beaches"
-                            text="Relax and unwind on the beautiful beaches of Penang."
-                            link="/nature/beaches"
+                            imageSrc="/gtw.jpeg"
+                            title="George Town"
+                            text="A UNESCO World Heritage Site known for its cultural diversity, colonial architecture, and rich history."
+                            link="/culture/3"
                             buttonColor="#F660AB"
                         />
                     </div>
@@ -160,7 +198,8 @@ const Home = () => {
                 </div>
                 {/* Food and Lifestyle */}
                 <header className="text-center my-5">
-                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#ff6f00"}}>Food and Lifestyle</h2>
+                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#ff6f00"}}>Food and
+                        Lifestyle</h2>
                 </header>
                 <div className="container">
                     <div className="row g-4">

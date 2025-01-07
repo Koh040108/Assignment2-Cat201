@@ -35,12 +35,12 @@ const AboutUs = () => {
                         <div className="col-md-4">
                             <div className="card">
                                 <img
-                                    src="team-member1.jpg"
+                                    src="/koh.jpg"
                                     className="card-img-top"
                                     alt="Team Member 1"
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title">John Doe</h5>
+                                    <h5 className="card-title">KOH KEAN HOE</h5>
                                     <p className="card-text">Founder & CEO</p>
                                 </div>
                             </div>
@@ -50,12 +50,12 @@ const AboutUs = () => {
                         <div className="col-md-4">
                             <div className="card">
                                 <img
-                                    src="team-member2.jpg"
+                                    src="thos.jpg"
                                     className="card-img-top"
                                     alt="Team Member 2"
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title">Jane Smith</h5>
+                                    <h5 className="card-title">SANTTHOS</h5>
                                     <p className="card-text">Marketing Director</p>
                                 </div>
                             </div>

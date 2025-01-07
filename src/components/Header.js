@@ -25,14 +25,12 @@ const Header = () => {
                     className="navbar-toggler d-lg-none"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#mobileMenu"
-                    aria-controls="mobileMenu"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span className="navbar-toggler-icon">
-                        <i className="bi bi-list"></i> {/* This is the hamburger icon */}
-                    </span>
+                    <i className="bi bi-list" style={{ fontSize: '1.5rem' }}></i>
                 </button>
 
                 {/* Desktop Navigation */}
@@ -63,7 +61,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className="collapse" id="mobileMenu">
+            <div className="collapse" id="navbarNavDropdown">
                 <ul className="nav flex-column bg-light p-3">
                     <li className="nav-item">
                         <NavLink exact to="/" className="nav-link" activeClassName="active">

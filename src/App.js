@@ -13,13 +13,6 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Culture from './pages/Culture';
 import CultureDetail from './pages/CultureDetail';
 
 function App() {
@@ -43,24 +36,12 @@ function App() {
                         <Route path="/ContactUs" element={<ContactUs />} />
                         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
                         <Route path="/TermsOfService" element={<TermsOfService />} />
+                        <Route path="/culture/:cultureId" element={<CultureDetail />} />
                         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
                     </Routes>
                 </main>
 
                 {/* Footer */}
-                <Footer />
-            </div>
-        </Router>
-        <Router>
-            <div>
-                <Header />
-                <main>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/culture" element={<Culture />} />
-                        <Route path="/culture/:cultureId" element={<CultureDetail />} />
-                    </Routes>
-                </main>
                 <Footer />
             </div>
         </Router>

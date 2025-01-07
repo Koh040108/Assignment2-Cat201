@@ -13,6 +13,15 @@ const NatureDetail = () => {
 
     return (
         <div className="nature-detail">
+            <div className="media-container">
+                {/* Example video (conditionally rendered if video URL exists) */}
+                {location.additionalVideo && (
+                    <video className="additional-media" autoPlay muted loop>
+                        <source src={location.additionalVideo} type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                )}
+            </div>
             <h2>{location.title}</h2>
             <img src={location.image} alt={location.title}/>
             <div className="description">
@@ -23,16 +32,6 @@ const NatureDetail = () => {
                     <strong>Established:</strong> {location.established || "Not Available"}
                 </p>
                 <div dangerouslySetInnerHTML={{__html: location.description}}/>
-            </div>
-
-            <div className="media-container">
-                {/* Example video (conditionally rendered if video URL exists) */}
-                {location.additionalVideo && (
-                    <video className="additional-media" autoPlay muted loop>
-                        <source src={location.additionalVideo} type="video/mp4"/>
-                        Your browser does not support the video tag.
-                    </video>
-                )}
             </div>
 
             <div className="full-description">

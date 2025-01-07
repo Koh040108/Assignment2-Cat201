@@ -13,7 +13,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-        background-image: url('C:\Users\TUF GAMING\IdeaProject\Assignment2-Cat201\public\food backdrop.jpg'); /* Set the background image */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent tiling */
@@ -25,8 +24,6 @@
     position: relative;
     z-index: 1; /* Ensure the content stays on top of the blurred background */
 }
-
-
 
 #food h2 {
     text-align: center;
@@ -97,9 +94,9 @@
     display: inline-block; /* Makes the link behave like a button */
     background-color: #ff6f00; /* Button background color */
     color: white; /* Text color */
-    padding: 7px 95px; /* Add padding inside the button */
+    padding: 0.5rem 2rem; /* Add padding inside the button */
     text-decoration: none; /* Remove underline */
-    border-radius: 1px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold text */
     transition: background-color 0.3s ease; /* Smooth hover effect */
@@ -107,5 +104,5 @@
 
 /* Hover effect for the link */
 #food .details-link:hover {
-    background-color: #ff6f00; /* Darker shade of the button color */
+    background-color: #e65c00; /* Darker shade of the button color */
 }
