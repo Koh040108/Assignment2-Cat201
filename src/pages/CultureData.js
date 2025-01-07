@@ -5,7 +5,9 @@ const cultureData = [
         location: "Kek Lok Si Temple",
         description: "A beautiful Buddhist temple perched on the hills of Air Itam, Penang.",
         image: "/temple.jpg",
-        coordinates: { lat: 5.39970194688728, lng: 100.27370629925103},
+        additionalVideo: "/temple.mp4",
+        siteLink: "https://www.kekloksitemple.com/",
+        googleMapsLink:"https://www.google.com/maps/place/kek+lok+si+temple/data=!4m2!3m1!1s0x304ac2185dfc8665:0x2c9084ea7f433ec4?sa=X&ved=1t:155783&ictx=111",
         fullDescription: `
       <p>The Kek Lok Si Temple, located in Air Itam, Penang, is one of the largest and most important Buddhist temples in Southeast Asia. Established in 1890, it has become an iconic symbol of Penang's rich cultural heritage. The temple's sprawling complex consists of several halls, pavilions, and gardens, featuring intricate carvings, statues, and colorful decorations. The highlight of the temple is the towering statue of the Goddess of Mercy, Kuan Yin, which stands at 30 meters tall.</p>
       
@@ -24,7 +26,9 @@ const cultureData = [
         location: "Penang Street Art",
         description: "A vibrant collection of murals and interactive art in the streets of George Town.",
         image: "/streetart.jpg",
-        coordinates: { lat: 5.414518635841361, lng: 100.33828543594592 },
+        additionalVideo: "/streetart.mp4",
+        siteLink: "https://www.streetartpenang.com/",
+        googleMapsLink:"https://www.google.com/maps/place/penang+street+art/data=!4m2!3m1!1s0x304ac3926b8cc0f9:0xe76a8f58f4205b17?sa=X&ved=1t:155783&ictx=111",
         fullDescription: `
       <p>Penang Street Art is one of the most famous and unique attractions in George Town, Penang. Since 2012, the streets of George Town have been transformed into an outdoor gallery, featuring a series of murals and art installations by renowned local and international artists. The street art is not only a visual delight but also tells the story of Penang's culture, history, and people.</p>
 
@@ -43,7 +47,9 @@ const cultureData = [
         location: "George Town, Penang",
         description: "A UNESCO World Heritage Site filled with cultural history, colonial architecture, and street food.",
         image: "/gtw.jpg",
-        coordinates: { lat:5.416255284006531, lng: 100.34086410137368 },
+        additionalVideo: "/gtw.mp4",
+        siteLink: "https://en.wikipedia.org/wiki/George_Town,_Penang",
+        googleMapsLink:"https://www.google.com/maps/place/George+Town,+Penang/@5.405964,100.2681468,13z/data=!3m1!4b1!4m6!3m5!1s0x304ac397ad2b7bd5:0x239ae45978a9b934!8m2!3d5.4140975!4d100.3285271!16zL20vMDE1ODA2?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D",
         fullDescription: `
       <p>George Town is one of Malaysia's most charming and historically significant cities. Established in 1786, it has been a melting pot of cultures, with influences from the Chinese, Malay, Indian, and European communities. The city’s colonial architecture, bustling markets, and narrow streets give it a unique and old-world charm that transports visitors back in time.</p>
 

@@ -1,22 +1,203 @@
 .food-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
+    box-sizing: border-box;
+    background-color: bisque;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    gap: 1rem; /* Space between image and video */
+    margin-bottom: 2rem;
+}
+
+.media-item {
+    width: 100%; /* Take full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Set a reasonable max height */
+    object-fit: cover; /* Ensure proper scaling without distortion */
+    border-radius: 0; /* Optional: Rounded corners */
+}
+
+.description, .full-description {
+    width: 100vw;
+    margin: auto;
+    padding: 20px;
+    background-color: bisque;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
     text-align: center;
+}
+
+.food-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    color: bisque;
+    background-color: #ff6f00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.food-button:hover {
+    background-color: darkorange;
+}
+
+@media (max-width: 768px) {
+    .media-item {
+        max-height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .description, .full-description {
+        font-size: 1rem;
+    }
+}
+
+.food-detail h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: orange; /* Dark gray */
 }
 
 .food-detail img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    max-height: 50vh; /* Set a reasonable max height */
 }
 
-.food-detail .description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+.food-detail .description{
+    width: 100vw; /* Full width of the viewport */
+    padding: 20px; /* Add some padding to create spacing for the text */
+    margin: 0; /* Remove any margin to stretch it fully */
+    box-sizing: border-box; /* Include padding in the width */
+    background-color: bisque; /* Optional: Set a background color */
+    text-align: center; /* Align text to the left */
 }
 
 .food-detail .full-description {
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.6;
+    width: 100vw; /* Full width of the viewport */
+    padding: 20px; /* Add some padding to create spacing for the text */
+    margin: 0; /* Remove any margin to stretch it fully */
+    box-sizing: border-box; /* Include padding in the width */
+    background-color: bisque; /* Optional: Set a background color */
+    text-align: center; /* Align text to the left */
+}
+
+.food-detail h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2c3e50; /* Dark gray */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for easy layout */
+    gap: 50px;
+}
+
+.food-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem; /* Bigger font for the button */
+    color: #ffffff;
+    background-color: #ff6f00; /* Blue color for the button */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.food-button:hover {
+    background-color: darkorange; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .media-item {
+        max-height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .description, .full-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .food-detail {
+        padding: 1rem;
+    }
+
+    .food-detail h2 {
+        font-size: 1.5rem;
+    }
+
+    .food-detail img {
+        border-radius: 5px;
+    }
+
+    .description, .full-description {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .food-detail h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.media-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 1.5rem; /* Spacing between image and video */
+}
+
+.additional-media {
+    width: 100vw; /* Make the video span the full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: none; /* Optional: Limit height to prevent overly large videos */
+    object-fit: cover; /* Ensure proper scaling without distortion */
+    border-radius: 0; /* Remove border-radius for fullscreen effect */
+}
+
+.additional-media img {
+    max-height: 400px; /* Limit image height */
+}
+
+.additional-media video {
+    width: 100vw; /* Stretch to full width */
+    height: auto;
+    max-height: none; /* Prevent the video from being too tall */
+    object-fit: cover;
+    border-radius: 0; /* Remove rounded corners for a modern look */
+}
+
+@media (max-width: 768px) {
+    .media-container {
+        gap: 1rem; /* Adjust spacing on smaller devices */
+    }
+
+    .additional-media {
+        max-height: 300px; /* Reduce height for smaller screens */
+    }
 }

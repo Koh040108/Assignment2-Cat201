@@ -221,7 +221,7 @@ const Home = () => {
                         <Card
                             imageSrc="./laksa.jpeg"
                             title="Peneng Asam Laksa"
-                            text="A tangy and spicy noodle soup famous in Penang."
+                            text="A tangy and spicy noodle soup that famous in Penang ."
                             link="/food/penang-laksa"
                             buttonColor="#ff6f00"
                         />

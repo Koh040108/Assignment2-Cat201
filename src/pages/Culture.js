@@ -13,7 +13,7 @@ const Culture = () => {
         <section id="culture"
                  style={{
                      position: 'relative',
-                     backgroundImage: `url('backdrop nature.jpg')`,
+                     backgroundImage: `url('background.jpg')`,
                      backgroundSize: 'cover',
                      backgroundPosition: 'center',
                      backgroundRepeat: 'no-repeat',
@@ -42,9 +42,7 @@ const Culture = () => {
                             <img src={culture.image} alt={culture.title}/>
                             <h3>{culture.title}</h3>
                             <p>{culture.description}</p>
-                            <Link to={`/culture/${culture.id}`} className="btn">
-                                Learn More
-                            </Link>
+                            <Link to={`/culture/${culture.id}`} className="details-link">Learn More</Link>
                         </div>
                     ))}
                 </div>

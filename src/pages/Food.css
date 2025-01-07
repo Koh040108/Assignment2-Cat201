@@ -26,31 +26,25 @@
 }
 
 #food h2 {
-    text-align: center;
-    font-size: 2.5rem; /* Larger font for emphasis */
-    margin-bottom: 2rem;
+    font-size: 2rem; /* Larger font for emphasis */
+    margin-bottom: 1rem;
     color: #ff6f00; /* Use a standout color */
-    font-family: 'Poppins', sans-serif; /* A modern font */
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .food-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem; /* Increased gap for better spacing */
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
 }
 
 .food-item {
-    width: 280px;
-    border: none; /* Remove the solid border */
-    border-radius: 12px; /* Softer border-radius */
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     overflow: hidden;
-    text-align: center;
-    background: linear-gradient(145deg, #ffffff, #f3f3f3); /* Gradient background */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+    transition: transform 0.3s ease;
 }
 
 .food-item:hover {
@@ -67,9 +61,8 @@
 
 .food-item h3 {
     font-size: 1.5rem; /* Slightly larger font size */
-    color: #333;
+    color: darkorange;
     margin: 1rem 0 0.5rem;
-    font-family: 'Poppins', sans-serif; /* Matching font */
 }
 
 .food-item p {
@@ -90,19 +83,18 @@
     }
 }
 
-#food .details-link {
+.details-link {
     display: inline-block; /* Makes the link behave like a button */
     background-color: #ff6f00; /* Button background color */
     color: white; /* Text color */
-    padding: 0.5rem 2rem; /* Add padding inside the button */
+    padding: 10px 150px; /* Add padding inside the button */
     text-decoration: none; /* Remove underline */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 1px; /* Rounded corners */
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold text */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
-
 /* Hover effect for the link */
 #food .details-link:hover {
-    background-color: #e65c00; /* Darker shade of the button color */
+    background-color: #ff6f00; /* Darker shade of the button color */
 }

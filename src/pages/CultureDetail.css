@@ -1,123 +1,203 @@
-/* Container styling for the CultureDetail component */
 .culture-detail {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: bisque;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    gap: 1rem; /* Space between image and video */
+    margin-bottom: 2rem;
+}
+
+.media-item {
+    width: 100%; /* Take full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Set a reasonable max height */
+    object-fit: cover; /* Ensure proper scaling without distortion */
+    border-radius: 0; /* Optional: Rounded corners */
+}
+
+.description, .full-description {
+    width: 100vw;
+    margin: auto;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Position relative to allow the blur effect */
-}
-
-/* Blur background (full-screen) */
-.blur-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('background.jpg'); /* Ensure you have a background image */
-    background-size: cover;
-    filter: blur(8px);
-    z-index: -1; /* Send it behind the content */
-}
-
-/* Title styling */
-.culture-detail h2 {
-    font-size: 2rem;
-    color: #8b4513;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Image styling */
-.culture-image {
-    display: block;
-    width: 100%;
-    height: 400px; /* Fixed height to make images same size */
-    object-fit: cover; /* Ensure the image covers the space without distortion */
-    border-radius: 10px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Description section styling */
-.description {
+    background-color: bisque;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Full description styling */
-.full-description h3 {
-    font-size: 1.5rem;
-    color: #0056b3;
-    margin-bottom: 15px;
-}
-
-.full-description p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-/* Video container styling */
-.video-container {
-    margin-top: 20px;
-}
-
-/* Map button styling */
-.map-button-container {
-    margin-top: 20px;
+    line-height: 1.8;
+    color: #333;
     text-align: center;
 }
 
-.map-button {
-    background-color: #4CAF50; /* Green color for button */
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
+.culture-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    color: bisque;
+    background-color: #ff6f00;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.map-button:hover {
-    background-color: #45a049; /* Darker green when hovered */
+.culture-button:hover {
+    background-color: darkorange;
 }
 
-/* Add responsive styling for smaller screens */
 @media (max-width: 768px) {
-    .culture-detail {
-        padding: 15px;
+    .media-item {
+        max-height: 300px; /* Reduce height for smaller screens */
     }
 
-    .culture-detail h2 {
-        font-size: 1.8rem;
-    }
-
-    .description {
+    .description, .full-description {
         font-size: 1rem;
     }
+}
 
-    .full-description h3 {
-        font-size: 1.3rem;
+.culture-detail h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: orange; /* Dark gray */
+}
+
+.culture-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    max-height: 50vh; /* Set a reasonable max height */
+}
+
+.culture-detail .description{
+    width: 100vw; /* Full width of the viewport */
+    padding: 20px; /* Add some padding to create spacing for the text */
+    margin: 0; /* Remove any margin to stretch it fully */
+    box-sizing: border-box; /* Include padding in the width */
+    background-color: bisque; /* Optional: Set a background color */
+    text-align: center; /* Align text to the left */
+}
+
+.culture-detail .full-description {
+    width: 100vw; /* Full width of the viewport */
+    padding: 20px; /* Add some padding to create spacing for the text */
+    margin: 0; /* Remove any margin to stretch it fully */
+    box-sizing: border-box; /* Include padding in the width */
+    background-color: bisque; /* Optional: Set a background color */
+    text-align: center; /* Align text to the left */
+}
+
+.culture-detail h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2c3e50; /* Dark gray */
+}
+
+.culture-container {
+    display: flex; /* Use flexbox for easy layout */
+    gap: 50px;
+}
+
+.culture-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem; /* Bigger font for the button */
+    color: #ffffff;
+    background-color: #ff6f00; /* Blue color for the button */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.culture-button:hover {
+    background-color: darkorange; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .media-item {
+        max-height: 300px; /* Reduce height for smaller screens */
     }
 
-    .full-description p {
+    .description, .full-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .food-detail {
+        padding: 1rem;
+    }
+
+    .food-detail h2 {
+        font-size: 1.5rem;
+    }
+
+    .food-detail img {
+        border-radius: 5px;
+    }
+
+    .description, .full-description {
+        padding: 1rem;
         font-size: 0.9rem;
     }
 
-    .map-button {
-        font-size: 14px;
-        padding: 12px 28px;
+    .food-detail h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.media-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 1.5rem; /* Spacing between image and video */
+}
+
+.additional-media {
+    width: 100vw; /* Make the video span the full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: none; /* Optional: Limit height to prevent overly large videos */
+    object-fit: cover; /* Ensure proper scaling without distortion */
+    border-radius: 0; /* Remove border-radius for fullscreen effect */
+}
+
+.additional-media img {
+    max-height: 400px; /* Limit image height */
+}
+
+.additional-media video {
+    width: 100vw; /* Stretch to full width */
+    height: auto;
+    max-height: none; /* Prevent the video from being too tall */
+    object-fit: cover;
+    border-radius: 0; /* Remove rounded corners for a modern look */
+}
+
+@media (max-width: 768px) {
+    .media-container {
+        gap: 1rem; /* Adjust spacing on smaller devices */
+    }
+
+    .additional-media {
+        max-height: 300px; /* Reduce height for smaller screens */
     }
 }
