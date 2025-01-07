@@ -4,7 +4,7 @@ import "./PrivacyPolicy.css";
 const PrivacyPolicy = () => {
     return (
         <div className="privacy-policy-container">
-            <header className="text-center py-5 bg-primary text-white">
+            <header className="text-center py-5 bg-black text-white">
                 <h1>Privacy Policy</h1>
                 <p>Last Updated: 3/1/2025</p>
             </header>

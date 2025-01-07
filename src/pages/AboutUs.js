@@ -5,7 +5,7 @@ import './AboutUs.css'; // Optional for custom styles
 const AboutUs = () => {
     return (
         <div className="about-us-container">
-            <header className="text-center py-5 bg-primary text-white">
+            <header className="text-center py-5 bg-black text-white">
                 <h1>About Us</h1>
                 <p>Learn more about our mission, vision, and team</p>
             </header>
@@ -30,10 +30,10 @@ const AboutUs = () => {
             <section className="bg-light py-5">
                 <div className="container text-center">
                     <h2>Meet Our Team</h2>
-                    <div className="row">
-                        {/* Team Member 1 */}
-                        <div className="col-md-4">
-                            <div className="card">
+                    <div className="row justify-content-center">
+                        {/* Team Member 1 (One above) */}
+                        <div className="col-md-12 d-flex justify-content-center mb-4">
+                            <div className="card" style={{ width: '18rem' }}>
                                 <img
                                     src="/koh.jpg"
                                     className="card-img-top"
@@ -45,10 +45,12 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <div className="row justify-content-center">
                         {/* Team Member 2 */}
-                        <div className="col-md-4">
-                            <div className="card">
+                        <div className="col-md-4 d-flex justify-content-center mb-4">
+                            <div className="card" style={{ width: '18rem' }}>
                                 <img
                                     src="thos.jpg"
                                     className="card-img-top"
@@ -62,16 +64,31 @@ const AboutUs = () => {
                         </div>
 
                         {/* Team Member 3 */}
-                        <div className="col-md-4">
-                            <div className="card">
+                        <div className="col-md-4 d-flex justify-content-center mb-4">
+                            <div className="card" style={{ width: '18rem' }}>
                                 <img
-                                    src="team-member3.jpg"
+                                    src="vnat.jpg"
                                     className="card-img-top"
                                     alt="Team Member 3"
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title">Alex Lee</h5>
+                                    <h5 className="card-title">Aveenath</h5>
                                     <p className="card-text">Content Manager</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Team Member 4 */}
+                        <div className="col-md-4 d-flex justify-content-center mb-4">
+                            <div className="card" style={{ width: '18rem' }}>
+                                <img
+                                    src="muzan.jpg"
+                                    className="card-img-top"
+                                    alt="Team Member 4"
+                                />
+                                <div className="card-body">
+                                    <h5 className="card-title">Muzan</h5>
+                                    <p className="card-text">Web Designer</p>
                                 </div>
                             </div>
                         </div>
