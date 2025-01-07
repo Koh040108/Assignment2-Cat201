@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap icons
 
 const Header = () => {
     return (
-        <header className="header bg-light shadow-sm">
+        <header className="header bg-dark shadow-sm">
             <div className="container d-flex align-items-center justify-content-between py-2">
                 {/* Logo Section */}
                 <div className="logo d-flex align-items-center">
@@ -15,9 +15,9 @@ const Header = () => {
                         src="logo.png"
                         alt="Visit Penang Logo"
                         className="me-2"
-                        style={{ width: '50px', height: '50px' }}
+                        style={{width: '50px', height: '50px'}}
                     />
-                    <h1 className="h4 m-0 text-primary">Visit Penang</h1>
+                    <h1 className="h4 m-0 text-white custom-heading">Visit Penang</h1>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -30,7 +30,7 @@ const Header = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <i className="bi bi-list" style={{ fontSize: '1.5rem' }}></i>
+                    <i className="bi bi-list" style={{ fontSize: '1.5rem', color: '#ffffff' }}></i>
                 </button>
 
                 {/* Desktop Navigation */}
