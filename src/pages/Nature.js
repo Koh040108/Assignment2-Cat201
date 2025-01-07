@@ -10,6 +10,8 @@ const Nature = () => {
                     <h3>Penang Hill</h3>
                     <p>Experience the breathtaking views and serene environment at Penang Hill.</p>
                     <Link to="/nature/penang-hill" className="details-link">Learn More</Link>
+
+
                 </div>
                 <div className="nature-item">
                     <img src="/escape-waterpark.jpg" alt="Escape Waterpark" />
