@@ -117,17 +117,22 @@ const Home = () => {
 
                 {/* Welcome Section */}
                 <header className="text-center my-5 px-3">
-                    <h1 className="display-4" style={{fontFamily: 'Poppins, sans-serif', color: "blue"}}>Welcome to
-                        Visit
-                        Penang</h1>
-                    <p className="lead text-muted" style={{fontFamily: 'Poppins, sans-serif'}}>Explore the best places
-                        and
-                        experiences in Penang!</p>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12 text-center">
+                                <h1 className="welcome-text"> Welcome To Visit Peneng</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="lead text-muted cursor typewriter-animation"
+                       style={{fontFamily: 'Poppins, sans-serif'}}>Explore the best places and experiences in
+                        Penang!</p>
                 </header>
 
                 {/* Culture and Heritage Section */}
                 <header className="text-center">
-                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#F660AB"}}>Culture and
+                    <h2 className="display-6"
+                        style={{fontFamily: 'Poppins, sans-serif', color: "#F660AB", fontWeight: 'bold'}}>Culture and
                         Heritage</h2>
                 </header>
                 <div className="container">
@@ -152,7 +157,7 @@ const Home = () => {
 
                         {/* Card 3 */}
                         <Card
-                            imageSrc="/gtw.jpeg"
+                            imageSrc="/gtw.jpg"
                             title="George Town"
                             text="A UNESCO World Heritage Site known for its cultural diversity, colonial architecture, and rich history."
                             link="/culture/3"
@@ -163,7 +168,7 @@ const Home = () => {
 
                 {/* Nature and Adventure Section */}
                 <header className="text-center my-5">
-                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#00B5B5"}}>Nature and
+                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#00B5B5",fontWeight: 'bold'}}>Nature and
                         Adventure</h2>
                 </header>
                 <div className="container">
@@ -198,7 +203,7 @@ const Home = () => {
                 </div>
                 {/* Food and Lifestyle */}
                 <header className="text-center my-5">
-                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#ff6f00"}}>Food and
+                    <h2 className="display-6" style={{fontFamily: 'Poppins, sans-serif', color: "#ff6f00",fontWeight: 'bold'}}>Food and
                         Lifestyle</h2>
                 </header>
                 <div className="container">
