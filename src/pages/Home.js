@@ -120,7 +120,7 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center">
-                                <h1 className="welcome-text"> Welcome To Peneng</h1>
+                                <h1 className="welcome-text"> Welcome To Penang</h1>
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@ const Home = () => {
                         {/* Card 2 */}
                         <Card
                             imageSrc="./laksa.jpeg"
-                            title="Peneng Asam Laksa"
+                            title="Penang Asam Laksa"
                             text="A tangy and spicy noodle soup that famous in Penang ."
                             link="/food/penang-laksa"
                             buttonColor="#ff6f00"
