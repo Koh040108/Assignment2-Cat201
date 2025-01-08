@@ -14,13 +14,29 @@ const FoodDetail = () => {
     return (
         <div className="food-detail">
             <h2>{food.title}</h2>
-            <img src={food.image} alt={food.title} />
-            <div className="description">
-                <p>{food.description}</p>
+            <div className="media-container">
+                {/* Example video (conditionally rendered if video URL exists) */}
+                {food.additionalVideo && (
+                    <video className="additional-media" autoPlay muted loop>
+                        <source src={food.additionalVideo} type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                )}
             </div>
+            <div className="description">
+                <p>
+                    <strong>{food.description}</strong>
+                </p>
+            </div>
+            <img src={food.image} alt={food.title}/>
             <div className="full-description">
                 <h3>Details</h3>
-                <div dangerouslySetInnerHTML={{ __html: food.fullDescription }} />
+                <div dangerouslySetInnerHTML={{__html: food.fullDescription}}/>
+            </div>
+            {/* Button for direct link to Google Maps */}
+            <div className="button-container">
+                <a href={food.googleMapsLink} className="food-button">View on Google Maps</a>
+                <a href={food.siteLink} className="food-button">View Official Website</a>
             </div>
         </div>
     );
