@@ -231,7 +231,7 @@ const Home = () => {
                             imageSrc="./nasi kandar.jpg"
                             title="Nasi Kandar"
                             text="Hot & spicy curry rice, signature of Penang first cuisine."
-                            link="/food-nasi-kandar"
+                            link="/food/nasi-kandar"
                             buttonColor="#ff6f00"
                         />
                     </div>
